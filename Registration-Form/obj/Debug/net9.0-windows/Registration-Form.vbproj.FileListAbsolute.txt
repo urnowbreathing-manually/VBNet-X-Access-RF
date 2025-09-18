@@ -1,0 +1,106 @@
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.exe
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.deps.json
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.runtimeconfig.json
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.dll
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.pdb
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration_Form.Form1.resources
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.vbproj.GenerateResource.cache
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.AssemblyInfo.vb
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.vbproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.dll
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\refint\Registration-Form.dll
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.pdb
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.genruntimeconfig.cache
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\ref\Registration-Form.dll
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\System.Data.OleDb.dll
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\System.Diagnostics.EventLog.dll
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\System.Data.OleDb.dll
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\System.Diagnostics.EventLog.dll
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.vbproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registra.9225B405.Up2Date
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.exe
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.deps.json
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.runtimeconfig.json
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.dll
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.pdb
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\bin\Debug\net9.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\bin\Debug\net9.0-windows\System.Data.OleDb.dll
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\bin\Debug\net9.0-windows\System.Diagnostics.EventLog.dll
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\bin\Debug\net9.0-windows\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\bin\Debug\net9.0-windows\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\System.Data.OleDb.dll
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\System.Diagnostics.EventLog.dll
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.vbproj.AssemblyReference.cache
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.vbproj.GenerateResource.cache
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.AssemblyInfoInputs.cache
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.AssemblyInfo.vb
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.vbproj.CoreCompileInputs.cache
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.sourcelink.json
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registra.9225B405.Up2Date
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.dll
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\obj\Debug\net9.0-windows\refint\Registration-Form.dll
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.pdb
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.genruntimeconfig.cache
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\obj\Debug\net9.0-windows\ref\Registration-Form.dll
+C:\Users\Winblows 11\Documents\OOP\Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration_Form.RegistrationForm.resources
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.exe
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.deps.json
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.runtimeconfig.json
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.dll
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.pdb
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\bin\Debug\net9.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\bin\Debug\net9.0-windows\System.Data.OleDb.dll
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\bin\Debug\net9.0-windows\System.Diagnostics.EventLog.dll
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\bin\Debug\net9.0-windows\System.Diagnostics.PerformanceCounter.dll
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\bin\Debug\net9.0-windows\System.Security.Cryptography.ProtectedData.dll
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\System.Data.OleDb.dll
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\System.Diagnostics.EventLog.dll
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.vbproj.AssemblyReference.cache
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration_Form.RegistrationForm.resources
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.vbproj.GenerateResource.cache
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.AssemblyInfoInputs.cache
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.AssemblyInfo.vb
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.vbproj.CoreCompileInputs.cache
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.sourcelink.json
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registra.9225B405.Up2Date
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.dll
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\obj\Debug\net9.0-windows\refint\Registration-Form.dll
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.pdb
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.genruntimeconfig.cache
+C:\Users\dudez\Source\Repos\VBNet-Registration-Form\Registration-Form\obj\Debug\net9.0-windows\ref\Registration-Form.dll
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.exe
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.deps.json
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.runtimeconfig.json
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.dll
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\Registration-Form.pdb
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\System.Data.OleDb.dll
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\System.Diagnostics.EventLog.dll
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\System.Data.OleDb.dll
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\System.Diagnostics.EventLog.dll
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\bin\Debug\net9.0-windows\runtimes\win\lib\net9.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.vbproj.AssemblyReference.cache
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration_Form.RegistrationForm.resources
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.vbproj.GenerateResource.cache
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.AssemblyInfoInputs.cache
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.AssemblyInfo.vb
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.vbproj.CoreCompileInputs.cache
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registra.9225B405.Up2Date
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.dll
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\refint\Registration-Form.dll
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.pdb
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\Registration-Form.genruntimeconfig.cache
+C:\Users\Administrator\Downloads\VBNet-Registration-Form-main\VBNet-Registration-Form-main\Registration-Form\obj\Debug\net9.0-windows\ref\Registration-Form.dll
