@@ -86,7 +86,7 @@ Partial Class RegistrationForm
         AddressTxtBox.Margin = New Padding(3, 2, 3, 2)
         AddressTxtBox.Name = "AddressTxtBox"
         AddressTxtBox.Size = New Size(534, 23)
-        AddressTxtBox.TabIndex = 3
+        AddressTxtBox.TabIndex = 8
         ' 
         ' SurnameTxtBox
         ' 
@@ -142,7 +142,7 @@ Partial Class RegistrationForm
         DateTimePicker1.Margin = New Padding(3, 2, 3, 2)
         DateTimePicker1.Name = "DateTimePicker1"
         DateTimePicker1.Size = New Size(220, 23)
-        DateTimePicker1.TabIndex = 8
+        DateTimePicker1.TabIndex = 5
         ' 
         ' Label1
         ' 
@@ -162,7 +162,7 @@ Partial Class RegistrationForm
         SuffixCmbBox.Margin = New Padding(3, 2, 3, 2)
         SuffixCmbBox.Name = "SuffixCmbBox"
         SuffixCmbBox.Size = New Size(98, 23)
-        SuffixCmbBox.TabIndex = 10
+        SuffixCmbBox.TabIndex = 3
         ' 
         ' Label5
         ' 
@@ -202,7 +202,7 @@ Partial Class RegistrationForm
         SexCmbBox.Margin = New Padding(3, 2, 3, 2)
         SexCmbBox.Name = "SexCmbBox"
         SexCmbBox.Size = New Size(98, 23)
-        SexCmbBox.TabIndex = 13
+        SexCmbBox.TabIndex = 4
         ' 
         ' Label8
         ' 
@@ -220,7 +220,7 @@ Partial Class RegistrationForm
         ContactNoTxtBox.Margin = New Padding(3, 2, 3, 2)
         ContactNoTxtBox.Name = "ContactNoTxtBox"
         ContactNoTxtBox.Size = New Size(219, 23)
-        ContactNoTxtBox.TabIndex = 15
+        ContactNoTxtBox.TabIndex = 6
         ' 
         ' Label9
         ' 
@@ -238,7 +238,7 @@ Partial Class RegistrationForm
         EmailTxtBox.Margin = New Padding(3, 2, 3, 2)
         EmailTxtBox.Name = "EmailTxtBox"
         EmailTxtBox.Size = New Size(219, 23)
-        EmailTxtBox.TabIndex = 17
+        EmailTxtBox.TabIndex = 7
         ' 
         ' Label10
         ' 
@@ -314,7 +314,7 @@ Partial Class RegistrationForm
         RegisterBtn.Location = New Point(591, 472)
         RegisterBtn.Name = "RegisterBtn"
         RegisterBtn.Size = New Size(107, 37)
-        RegisterBtn.TabIndex = 25
+        RegisterBtn.TabIndex = 12
         RegisterBtn.Text = "Register"
         RegisterBtn.UseVisualStyleBackColor = False
         ' 
@@ -333,7 +333,7 @@ Partial Class RegistrationForm
         MunicipalityCmbBox.Margin = New Padding(3, 2, 3, 2)
         MunicipalityCmbBox.Name = "MunicipalityCmbBox"
         MunicipalityCmbBox.Size = New Size(157, 23)
-        MunicipalityCmbBox.TabIndex = 26
+        MunicipalityCmbBox.TabIndex = 9
         ' 
         ' Label17
         ' 
@@ -369,7 +369,7 @@ Partial Class RegistrationForm
         PostalCodeTxtBox.Margin = New Padding(3, 2, 3, 2)
         PostalCodeTxtBox.Name = "PostalCodeTxtBox"
         PostalCodeTxtBox.Size = New Size(79, 23)
-        PostalCodeTxtBox.TabIndex = 32
+        PostalCodeTxtBox.TabIndex = 10
         ' 
         ' Label20
         ' 
@@ -409,7 +409,7 @@ Partial Class RegistrationForm
         ConfirmationChckBox.Location = New Point(257, 472)
         ConfirmationChckBox.Name = "ConfirmationChckBox"
         ConfirmationChckBox.Size = New Size(328, 21)
-        ConfirmationChckBox.TabIndex = 35
+        ConfirmationChckBox.TabIndex = 11
         ConfirmationChckBox.Text = "I confirm that all details above is correct and accurate"
         ConfirmationChckBox.UseVisualStyleBackColor = True
         ' 

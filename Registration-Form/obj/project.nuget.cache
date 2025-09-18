@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "XmbjtrcXjI4=",
+  "dgSpecHash": "3xBgqaHokAU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Downloads\\VBNet-Registration-Form-main\\VBNet-Registration-Form-main\\Registration-Form\\Registration-Form.vbproj",
+  "projectFilePath": "C:\\Users\\Winblows 11\\Documents\\OOP\\VBNet-X-Access-RF\\Registration-Form\\Registration-Form.vbproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.9\\system.configuration.configurationmanager.9.0.9.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.data.oledb\\9.0.9\\system.data.oledb.9.0.9.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.9\\system.diagnostics.eventlog.9.0.9.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.diagnostics.performancecounter\\9.0.9\\system.diagnostics.performancecounter.9.0.9.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.9\\system.security.cryptography.protecteddata.9.0.9.nupkg.sha512"
+    "C:\\Users\\Winblows 11\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.9\\system.configuration.configurationmanager.9.0.9.nupkg.sha512",
+    "C:\\Users\\Winblows 11\\.nuget\\packages\\system.data.oledb\\9.0.9\\system.data.oledb.9.0.9.nupkg.sha512",
+    "C:\\Users\\Winblows 11\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.9\\system.diagnostics.eventlog.9.0.9.nupkg.sha512",
+    "C:\\Users\\Winblows 11\\.nuget\\packages\\system.diagnostics.performancecounter\\9.0.9\\system.diagnostics.performancecounter.9.0.9.nupkg.sha512",
+    "C:\\Users\\Winblows 11\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.9\\system.security.cryptography.protecteddata.9.0.9.nupkg.sha512"
   ],
   "logs": []
 }

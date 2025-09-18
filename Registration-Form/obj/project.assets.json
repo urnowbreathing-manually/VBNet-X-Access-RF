@@ -285,23 +285,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {},
+    "C:\\Users\\Winblows 11\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Downloads\\VBNet-Registration-Form-main\\VBNet-Registration-Form-main\\Registration-Form\\Registration-Form.vbproj",
+      "projectUniqueName": "C:\\Users\\Winblows 11\\Documents\\OOP\\VBNet-X-Access-RF\\Registration-Form\\Registration-Form.vbproj",
       "projectName": "Registration-Form",
-      "projectPath": "C:\\Users\\Administrator\\Downloads\\VBNet-Registration-Form-main\\VBNet-Registration-Form-main\\Registration-Form\\Registration-Form.vbproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Downloads\\VBNet-Registration-Form-main\\VBNet-Registration-Form-main\\Registration-Form\\obj\\",
+      "projectPath": "C:\\Users\\Winblows 11\\Documents\\OOP\\VBNet-X-Access-RF\\Registration-Form\\Registration-Form.vbproj",
+      "packagesPath": "C:\\Users\\Winblows 11\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Winblows 11\\Documents\\OOP\\VBNet-X-Access-RF\\Registration-Form\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Winblows 11\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

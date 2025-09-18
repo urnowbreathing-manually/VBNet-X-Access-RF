@@ -3,8 +3,8 @@ Imports System.IO
 Imports Windows.Win32.System
 
 Public Class RegistrationForm
-    Dim ConnectionString As String
-    Dim CurrentUser As String
+    Public ConnectionString As String
+    Public CurrentUser As String
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim CurrentPath As String = Directory.GetCurrentDirectory()
@@ -21,6 +21,7 @@ Public Class RegistrationForm
 
         ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & DirInfo.FullName & "\MSAccess\OOPact.accdb ;Persist Security Info=False;"
         LoadMunicipalityDB()
+        'Form2.Show(Me)
     End Sub
 
 
@@ -101,6 +102,7 @@ Public Class RegistrationForm
     End Sub
 
 
+
     Private Sub RegisterBtn_Click(sender As Object, e As EventArgs) Handles RegisterBtn.Click
         If Not ValidateRequiredFields() Then
             Exit Sub
@@ -125,6 +127,16 @@ Public Class RegistrationForm
         AddRecord(surName, firstName, middleName, suffix, sex, contactNo, emailAddr, birthDateFix, address, municipality, postalCode)
     End Sub
 
+    Private Sub ConfirmationChckBox_KeyDown(sender As Object, e As KeyEventArgs) Handles ConfirmationChckBox.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            If ConfirmationChckBox.Checked = False Then
+                ConfirmationChckBox.Checked = True
+            Else
+                ConfirmationChckBox.Checked = False
+            End If
+        End If
+    End Sub
+
     Private Function ValidateRequiredFields() As Boolean
 
         If String.IsNullOrWhiteSpace(FirstNameTxtBox.Text) Then
@@ -140,15 +152,13 @@ Public Class RegistrationForm
             Return False
         End If
 
-        If String.IsNullOrWhiteSpace(ContactNoTxtBox.Text) Then
-            If ContactNoTxtBox.Text < 12 Then
-                MessageBox.Show("Contact No. is less than 12 digit.")
-                ContactNoTxtBox.Focus()
+        If (ContactNoTxtBox.TextLength < 11) Then
+            If String.IsNullOrWhiteSpace(ContactNoTxtBox.Text) Then
+                MessageBox.Show("Contact No. is required.")
             Else
-                MessageBox.Show("Contact No is required.")
-                ContactNoTxtBox.Focus()
+                MessageBox.Show("Contact No. is less than 11 digits.")
             End If
-
+            ContactNoTxtBox.Focus()
             Return False
         End If
 
@@ -174,19 +184,19 @@ Public Class RegistrationForm
             Return False
         End If
 
-        If SexCmbBox.SelectedIndex = -1 Then
-            MessageBox.Show("Sex orientation is required.")
+        If (SexCmbBox.SelectedIndex = -1) Or (String.IsNullOrWhiteSpace(SexCmbBox.Text)) Then
+            MessageBox.Show("Sex is required.")
             SexCmbBox.Focus()
             Return False
         End If
 
         If Not ConfirmationChckBox.Checked Then
-            MsgBox("Please confirm that all information above is correct")
+            MsgBox("Please confirm that all information above is correct.")
             ConfirmationChckBox.Focus()
             Return False
         End If
 
-        If MunicipalityCmbBox.SelectedIndex = -1 Then
+        If (MunicipalityCmbBox.SelectedIndex = -1) Or (String.IsNullOrWhiteSpace(MunicipalityCmbBox.Text)) Then
             MessageBox.Show("Municipality is required.")
             MunicipalityCmbBox.Focus()
             Return False
@@ -195,9 +205,10 @@ Public Class RegistrationForm
         Return True
     End Function
 
-    Private Sub TextBox_KeyPress(sender As Object, e As KeyPressEventArgs)
-        If Char.IsDigit(e.KeyChar) = "1" Then
-            e.Handled = True
-        End If
-    End Sub
+    'Doesn't handle anything?
+    'Private Sub TextBox_KeyPress(sender As Object, e As KeyPressEventArgs)
+    '    If Char.IsDigit(e.KeyChar) = "1" Then
+    '        e.Handled = True
+    '    End If
+    'End Sub
 End Class
