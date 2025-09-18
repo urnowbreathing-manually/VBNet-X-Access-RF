@@ -3,8 +3,8 @@ Imports System.IO
 Imports Windows.Win32.System
 
 Public Class RegistrationForm
-    Public ConnectionString As String
-    Public CurrentUser As String
+    Dim ConnectionString As String
+    Dim CurrentUser As String
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim CurrentPath As String = Directory.GetCurrentDirectory()
@@ -21,7 +21,7 @@ Public Class RegistrationForm
 
         ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & DirInfo.FullName & "\MSAccess\OOPact.accdb ;Persist Security Info=False;"
         LoadMunicipalityDB()
-        'Form2.Show(Me)
+        Form2.Show(Me)
     End Sub
 
 
