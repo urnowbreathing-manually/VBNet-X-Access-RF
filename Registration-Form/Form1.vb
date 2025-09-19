@@ -152,6 +152,12 @@ Public Class RegistrationForm
             Return False
         End If
 
+        MsgBox(DateTimePicker1.Value.Year.ToString)
+        If ((Integer.Parse(Date.Now.ToString("yyyy"))) - Integer.Parse(DateTimePicker1.Value.Year.ToString)) < 18 Then
+            MessageBox.Show("Age must be greater than 18 years old.")
+            Return False
+        End If
+
         If (ContactNoTxtBox.TextLength < 11) Then
             If String.IsNullOrWhiteSpace(ContactNoTxtBox.Text) Then
                 MessageBox.Show("Contact No. is required.")
