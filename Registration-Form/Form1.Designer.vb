@@ -61,6 +61,7 @@ Partial Class RegistrationForm
         Label21 = New Label()
         Label23 = New Label()
         Label24 = New Label()
+        ViewRecordBtn = New Button()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -385,11 +386,12 @@ Partial Class RegistrationForm
         ' Panel1
         ' 
         Panel1.BackColor = Color.MediumAquamarine
+        Panel1.Controls.Add(ViewRecordBtn)
         Panel1.Controls.Add(Label22)
         Panel1.Controls.Add(Label6)
         Panel1.Location = New Point(-1, -1)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(705, 54)
+        Panel1.Size = New Size(731, 54)
         Panel1.TabIndex = 34
         ' 
         ' Label22
@@ -446,13 +448,25 @@ Partial Class RegistrationForm
         Label24.TabIndex = 38
         Label24.Text = "Street name"
         ' 
+        ' ViewRecordBtn
+        ' 
+        ViewRecordBtn.BackColor = Color.Orange
+        ViewRecordBtn.FlatAppearance.BorderSize = 0
+        ViewRecordBtn.FlatStyle = FlatStyle.Flat
+        ViewRecordBtn.Location = New Point(592, 12)
+        ViewRecordBtn.Name = "ViewRecordBtn"
+        ViewRecordBtn.Size = New Size(127, 35)
+        ViewRecordBtn.TabIndex = 14
+        ViewRecordBtn.Text = "View records"
+        ViewRecordBtn.UseVisualStyleBackColor = False
+        ' 
         ' RegistrationForm
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         AutoScroll = True
-        BackColor = SystemColors.ControlLightLight
-        ClientSize = New Size(704, 523)
+        BackColor = SystemColors.ControlLight
+        ClientSize = New Size(730, 523)
         Controls.Add(Label24)
         Controls.Add(Label23)
         Controls.Add(Label21)
@@ -538,5 +552,6 @@ Partial Class RegistrationForm
     Friend WithEvents Label22 As Label
     Friend WithEvents Label23 As Label
     Friend WithEvents Label24 As Label
+    Friend WithEvents ViewRecordBtn As Button
 
 End Class

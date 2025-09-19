@@ -21,7 +21,7 @@ Public Class RegistrationForm
 
         ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & DirInfo.FullName & "\MSAccess\OOPact.accdb ;Persist Security Info=False;"
         LoadMunicipalityDB()
-        Form2.Show(Me)
+        'Form2.Show(Me)
     End Sub
 
 
@@ -204,6 +204,10 @@ Public Class RegistrationForm
 
         Return True
     End Function
+
+    Private Sub ViewRecordBtn_Click(sender As Object, e As EventArgs) Handles ViewRecordBtn.Click
+        Form2.Show(Me)
+    End Sub
 
     'Doesn't handle anything?
     'Private Sub TextBox_KeyPress(sender As Object, e As KeyPressEventArgs)

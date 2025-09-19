@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("Registration-Form"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d868ddc52e7ff629b18fda61fb1f7ace233bbd40"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("Registration-Form"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("Registration-Form"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
