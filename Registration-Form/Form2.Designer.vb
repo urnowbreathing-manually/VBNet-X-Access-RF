@@ -60,14 +60,21 @@ Partial Class Form2
         DeleteBtn = New Button()
         Label6 = New Label()
         IdTxtBox = New TextBox()
+        Panel1 = New Panel()
+        TextBox1 = New TextBox()
+        Label21 = New Label()
+        Panel2 = New Panel()
+        Label22 = New Label()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
+        Panel1.SuspendLayout()
+        Panel2.SuspendLayout()
         SuspendLayout()
         ' 
         ' DataGridView1
         ' 
         DataGridView1.AllowUserToResizeRows = False
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridView1.Location = New Point(22, 302)
+        DataGridView1.Location = New Point(24, 370)
         DataGridView1.Name = "DataGridView1"
         DataGridView1.Size = New Size(776, 328)
         DataGridView1.TabIndex = 2
@@ -77,7 +84,7 @@ Partial Class Form2
         Label24.AutoSize = True
         Label24.Font = New Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label24.ForeColor = SystemColors.ControlDarkDark
-        Label24.Location = New Point(195, 220)
+        Label24.Location = New Point(195, 213)
         Label24.Name = "Label24"
         Label24.Size = New Size(70, 15)
         Label24.TabIndex = 71
@@ -88,7 +95,7 @@ Partial Class Form2
         Label23.AutoSize = True
         Label23.Font = New Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label23.ForeColor = SystemColors.ControlDarkDark
-        Label23.Location = New Point(115, 220)
+        Label23.Location = New Point(115, 213)
         Label23.Name = "Label23"
         Label23.Size = New Size(49, 15)
         Label23.TabIndex = 70
@@ -99,7 +106,7 @@ Partial Class Form2
         Label20.AutoSize = True
         Label20.Font = New Font("Segoe UI Semibold", 7.8F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label20.ForeColor = Color.Firebrick
-        Label20.Location = New Point(453, 198)
+        Label20.Location = New Point(448, 191)
         Label20.Name = "Label20"
         Label20.Size = New Size(51, 13)
         Label20.TabIndex = 69
@@ -107,7 +114,7 @@ Partial Class Form2
         ' 
         ' PostalCodeTxtBox
         ' 
-        PostalCodeTxtBox.Location = New Point(719, 173)
+        PostalCodeTxtBox.Location = New Point(714, 166)
         PostalCodeTxtBox.Margin = New Padding(3, 2, 3, 2)
         PostalCodeTxtBox.Name = "PostalCodeTxtBox"
         PostalCodeTxtBox.Size = New Size(79, 23)
@@ -117,7 +124,7 @@ Partial Class Form2
         ' 
         Label18.AutoSize = True
         Label18.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
-        Label18.Location = New Point(636, 174)
+        Label18.Location = New Point(631, 167)
         Label18.Name = "Label18"
         Label18.Size = New Size(76, 17)
         Label18.TabIndex = 68
@@ -126,7 +133,7 @@ Partial Class Form2
         ' Label19
         ' 
         Label19.AutoSize = True
-        Label19.Location = New Point(426, 470)
+        Label19.Location = New Point(428, 518)
         Label19.Name = "Label19"
         Label19.Size = New Size(0, 15)
         Label19.TabIndex = 67
@@ -135,7 +142,7 @@ Partial Class Form2
         ' 
         Label17.AutoSize = True
         Label17.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
-        Label17.Location = New Point(369, 175)
+        Label17.Location = New Point(364, 168)
         Label17.Name = "Label17"
         Label17.Size = New Size(81, 17)
         Label17.TabIndex = 66
@@ -144,7 +151,7 @@ Partial Class Form2
         ' Label16
         ' 
         Label16.AutoSize = True
-        Label16.Location = New Point(139, 470)
+        Label16.Location = New Point(141, 518)
         Label16.Name = "Label16"
         Label16.Size = New Size(0, 15)
         Label16.TabIndex = 65
@@ -152,7 +159,7 @@ Partial Class Form2
         ' MunicipalityCmbBox
         ' 
         MunicipalityCmbBox.FormattingEnabled = True
-        MunicipalityCmbBox.Location = New Point(452, 173)
+        MunicipalityCmbBox.Location = New Point(447, 166)
         MunicipalityCmbBox.Margin = New Padding(3, 2, 3, 2)
         MunicipalityCmbBox.Name = "MunicipalityCmbBox"
         MunicipalityCmbBox.Size = New Size(157, 23)
@@ -163,7 +170,7 @@ Partial Class Form2
         Label15.AutoSize = True
         Label15.Font = New Font("Segoe UI Semibold", 7.8F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label15.ForeColor = Color.Firebrick
-        Label15.Location = New Point(115, 262)
+        Label15.Location = New Point(115, 255)
         Label15.Name = "Label15"
         Label15.Size = New Size(51, 13)
         Label15.TabIndex = 64
@@ -174,7 +181,7 @@ Partial Class Form2
         Label14.AutoSize = True
         Label14.Font = New Font("Segoe UI Semibold", 7.8F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label14.ForeColor = Color.Firebrick
-        Label14.Location = New Point(116, 68)
+        Label14.Location = New Point(111, 61)
         Label14.Name = "Label14"
         Label14.Size = New Size(51, 13)
         Label14.TabIndex = 63
@@ -185,7 +192,7 @@ Partial Class Form2
         Label13.AutoSize = True
         Label13.Font = New Font("Segoe UI Semibold", 7.8F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label13.ForeColor = Color.Firebrick
-        Label13.Location = New Point(452, 70)
+        Label13.Location = New Point(447, 63)
         Label13.Name = "Label13"
         Label13.Size = New Size(51, 13)
         Label13.TabIndex = 62
@@ -196,7 +203,7 @@ Partial Class Form2
         Label12.AutoSize = True
         Label12.Font = New Font("Segoe UI Semibold", 7.8F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label12.ForeColor = Color.Firebrick
-        Label12.Location = New Point(117, 193)
+        Label12.Location = New Point(112, 186)
         Label12.Name = "Label12"
         Label12.Size = New Size(51, 13)
         Label12.TabIndex = 61
@@ -207,7 +214,7 @@ Partial Class Form2
         Label11.AutoSize = True
         Label11.Font = New Font("Segoe UI Semibold", 7.8F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label11.ForeColor = Color.Firebrick
-        Label11.Location = New Point(575, 149)
+        Label11.Location = New Point(570, 142)
         Label11.Name = "Label11"
         Label11.Size = New Size(51, 13)
         Label11.TabIndex = 60
@@ -218,7 +225,7 @@ Partial Class Form2
         Label10.AutoSize = True
         Label10.Font = New Font("Segoe UI Semibold", 7.8F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label10.ForeColor = Color.Firebrick
-        Label10.Location = New Point(116, 149)
+        Label10.Location = New Point(111, 142)
         Label10.Name = "Label10"
         Label10.Size = New Size(51, 13)
         Label10.TabIndex = 59
@@ -228,7 +235,7 @@ Partial Class Form2
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
-        Label9.Location = New Point(355, 88)
+        Label9.Location = New Point(350, 81)
         Label9.Name = "Label9"
         Label9.Size = New Size(91, 17)
         Label9.TabIndex = 58
@@ -236,7 +243,7 @@ Partial Class Form2
         ' 
         ' EmailTxtBox
         ' 
-        EmailTxtBox.Location = New Point(452, 88)
+        EmailTxtBox.Location = New Point(447, 81)
         EmailTxtBox.Margin = New Padding(3, 2, 3, 2)
         EmailTxtBox.Name = "EmailTxtBox"
         EmailTxtBox.Size = New Size(219, 23)
@@ -246,7 +253,7 @@ Partial Class Form2
         ' 
         Label8.AutoSize = True
         Label8.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
-        Label8.Location = New Point(369, 47)
+        Label8.Location = New Point(364, 40)
         Label8.Name = "Label8"
         Label8.Size = New Size(80, 17)
         Label8.TabIndex = 57
@@ -254,17 +261,17 @@ Partial Class Form2
         ' 
         ' ContactNoTxtBox
         ' 
-        ContactNoTxtBox.Location = New Point(452, 45)
+        ContactNoTxtBox.Location = New Point(490, 38)
         ContactNoTxtBox.Margin = New Padding(3, 2, 3, 2)
         ContactNoTxtBox.Name = "ContactNoTxtBox"
-        ContactNoTxtBox.Size = New Size(219, 23)
+        ContactNoTxtBox.Size = New Size(175, 23)
         ContactNoTxtBox.TabIndex = 48
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Segoe UI", 10F)
-        Label7.Location = New Point(539, 125)
+        Label7.Location = New Point(534, 118)
         Label7.Name = "Label7"
         Label7.Size = New Size(29, 19)
         Label7.TabIndex = 56
@@ -274,7 +281,7 @@ Partial Class Form2
         ' 
         SexCmbBox.FormattingEnabled = True
         SexCmbBox.Items.AddRange(New Object() {"Male", "Female"})
-        SexCmbBox.Location = New Point(572, 124)
+        SexCmbBox.Location = New Point(567, 117)
         SexCmbBox.Margin = New Padding(3, 2, 3, 2)
         SexCmbBox.Name = "SexCmbBox"
         SexCmbBox.Size = New Size(98, 23)
@@ -284,7 +291,7 @@ Partial Class Form2
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
-        Label5.Location = New Point(382, 127)
+        Label5.Location = New Point(377, 120)
         Label5.Name = "Label5"
         Label5.Size = New Size(41, 17)
         Label5.TabIndex = 55
@@ -294,7 +301,7 @@ Partial Class Form2
         ' 
         SuffixCmbBox.FormattingEnabled = True
         SuffixCmbBox.Items.AddRange(New Object() {"Jr.", "Sr.", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"})
-        SuffixCmbBox.Location = New Point(428, 124)
+        SuffixCmbBox.Location = New Point(423, 117)
         SuffixCmbBox.Margin = New Padding(3, 2, 3, 2)
         SuffixCmbBox.Name = "SuffixCmbBox"
         SuffixCmbBox.Size = New Size(98, 23)
@@ -304,7 +311,7 @@ Partial Class Form2
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
-        Label1.Location = New Point(46, 172)
+        Label1.Location = New Point(41, 165)
         Label1.Name = "Label1"
         Label1.Size = New Size(68, 17)
         Label1.TabIndex = 53
@@ -312,7 +319,7 @@ Partial Class Form2
         ' 
         ' DateTimePicker1
         ' 
-        DateTimePicker1.Location = New Point(116, 170)
+        DateTimePicker1.Location = New Point(111, 163)
         DateTimePicker1.Margin = New Padding(3, 2, 3, 2)
         DateTimePicker1.Name = "DateTimePicker1"
         DateTimePicker1.Size = New Size(220, 23)
@@ -322,7 +329,7 @@ Partial Class Form2
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
-        Label3.Location = New Point(6, 238)
+        Label3.Location = New Point(8, 286)
         Label3.Name = "Label3"
         Label3.Size = New Size(105, 17)
         Label3.TabIndex = 49
@@ -332,7 +339,7 @@ Partial Class Form2
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
-        Label4.Location = New Point(46, 126)
+        Label4.Location = New Point(41, 119)
         Label4.Name = "Label4"
         Label4.Size = New Size(62, 17)
         Label4.TabIndex = 47
@@ -342,7 +349,7 @@ Partial Class Form2
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
-        Label2.Location = New Point(22, 88)
+        Label2.Location = New Point(17, 81)
         Label2.Name = "Label2"
         Label2.Size = New Size(87, 17)
         Label2.TabIndex = 45
@@ -352,7 +359,7 @@ Partial Class Form2
         ' 
         FnameLbl.AutoSize = True
         FnameLbl.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
-        FnameLbl.Location = New Point(42, 43)
+        FnameLbl.Location = New Point(37, 36)
         FnameLbl.Name = "FnameLbl"
         FnameLbl.Size = New Size(72, 17)
         FnameLbl.TabIndex = 43
@@ -360,7 +367,7 @@ Partial Class Form2
         ' 
         ' AddressTxtBox
         ' 
-        AddressTxtBox.Location = New Point(115, 237)
+        AddressTxtBox.Location = New Point(115, 230)
         AddressTxtBox.Margin = New Padding(3, 2, 3, 2)
         AddressTxtBox.Name = "AddressTxtBox"
         AddressTxtBox.Size = New Size(411, 23)
@@ -368,7 +375,7 @@ Partial Class Form2
         ' 
         ' SurnameTxtBox
         ' 
-        SurnameTxtBox.Location = New Point(115, 124)
+        SurnameTxtBox.Location = New Point(110, 117)
         SurnameTxtBox.Margin = New Padding(3, 2, 3, 2)
         SurnameTxtBox.Name = "SurnameTxtBox"
         SurnameTxtBox.Size = New Size(219, 23)
@@ -376,7 +383,7 @@ Partial Class Form2
         ' 
         ' MiddleNameTxtBox
         ' 
-        MiddleNameTxtBox.Location = New Point(115, 86)
+        MiddleNameTxtBox.Location = New Point(110, 79)
         MiddleNameTxtBox.Margin = New Padding(3, 2, 3, 2)
         MiddleNameTxtBox.Name = "MiddleNameTxtBox"
         MiddleNameTxtBox.Size = New Size(219, 23)
@@ -384,7 +391,7 @@ Partial Class Form2
         ' 
         ' FirstNameTxtBox
         ' 
-        FirstNameTxtBox.Location = New Point(116, 43)
+        FirstNameTxtBox.Location = New Point(111, 36)
         FirstNameTxtBox.Margin = New Padding(3, 2, 3, 2)
         FirstNameTxtBox.Name = "FirstNameTxtBox"
         FirstNameTxtBox.Size = New Size(219, 23)
@@ -395,7 +402,7 @@ Partial Class Form2
         UpdateBtn.BackColor = Color.SpringGreen
         UpdateBtn.FlatAppearance.BorderSize = 0
         UpdateBtn.FlatStyle = FlatStyle.Flat
-        UpdateBtn.Location = New Point(593, 251)
+        UpdateBtn.Location = New Point(588, 244)
         UpdateBtn.Name = "UpdateBtn"
         UpdateBtn.Size = New Size(95, 33)
         UpdateBtn.TabIndex = 72
@@ -407,7 +414,7 @@ Partial Class Form2
         DeleteBtn.BackColor = Color.LightCoral
         DeleteBtn.FlatAppearance.BorderSize = 0
         DeleteBtn.FlatStyle = FlatStyle.Flat
-        DeleteBtn.Location = New Point(703, 251)
+        DeleteBtn.Location = New Point(698, 244)
         DeleteBtn.Name = "DeleteBtn"
         DeleteBtn.Size = New Size(95, 33)
         DeleteBtn.TabIndex = 73
@@ -418,7 +425,7 @@ Partial Class Form2
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
-        Label6.Location = New Point(88, 11)
+        Label6.Location = New Point(83, 4)
         Label6.Name = "Label6"
         Label6.Size = New Size(21, 17)
         Label6.TabIndex = 74
@@ -427,59 +434,113 @@ Partial Class Form2
         ' IdTxtBox
         ' 
         IdTxtBox.Enabled = False
-        IdTxtBox.Location = New Point(117, 8)
+        IdTxtBox.Location = New Point(112, 1)
         IdTxtBox.Margin = New Padding(3, 2, 3, 2)
         IdTxtBox.Name = "IdTxtBox"
         IdTxtBox.Size = New Size(51, 23)
         IdTxtBox.TabIndex = 75
+        ' 
+        ' Panel1
+        ' 
+        Panel1.Controls.Add(TextBox1)
+        Panel1.Controls.Add(Label21)
+        Panel1.Controls.Add(IdTxtBox)
+        Panel1.Controls.Add(Label6)
+        Panel1.Controls.Add(DeleteBtn)
+        Panel1.Controls.Add(UpdateBtn)
+        Panel1.Controls.Add(Label24)
+        Panel1.Controls.Add(Label23)
+        Panel1.Controls.Add(Label20)
+        Panel1.Controls.Add(PostalCodeTxtBox)
+        Panel1.Controls.Add(Label18)
+        Panel1.Controls.Add(Label17)
+        Panel1.Controls.Add(MunicipalityCmbBox)
+        Panel1.Controls.Add(Label15)
+        Panel1.Controls.Add(Label14)
+        Panel1.Controls.Add(Label13)
+        Panel1.Controls.Add(Label12)
+        Panel1.Controls.Add(Label11)
+        Panel1.Controls.Add(Label10)
+        Panel1.Controls.Add(Label9)
+        Panel1.Controls.Add(EmailTxtBox)
+        Panel1.Controls.Add(Label8)
+        Panel1.Controls.Add(ContactNoTxtBox)
+        Panel1.Controls.Add(Label7)
+        Panel1.Controls.Add(SexCmbBox)
+        Panel1.Controls.Add(Label5)
+        Panel1.Controls.Add(SuffixCmbBox)
+        Panel1.Controls.Add(Label1)
+        Panel1.Controls.Add(DateTimePicker1)
+        Panel1.Controls.Add(Label4)
+        Panel1.Controls.Add(Label2)
+        Panel1.Controls.Add(FnameLbl)
+        Panel1.Controls.Add(AddressTxtBox)
+        Panel1.Controls.Add(SurnameTxtBox)
+        Panel1.Controls.Add(MiddleNameTxtBox)
+        Panel1.Controls.Add(FirstNameTxtBox)
+        Panel1.Location = New Point(8, 60)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(803, 295)
+        Panel1.TabIndex = 76
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Enabled = False
+        TextBox1.Location = New Point(451, 38)
+        TextBox1.Margin = New Padding(3, 2, 3, 2)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(40, 23)
+        TextBox1.TabIndex = 77
+        TextBox1.Text = "+63"
+        ' 
+        ' Label21
+        ' 
+        Label21.AutoSize = True
+        Label21.Font = New Font("Segoe UI Semibold", 9.75F, FontStyle.Bold)
+        Label21.Location = New Point(10, 233)
+        Label21.Name = "Label21"
+        Label21.Size = New Size(105, 17)
+        Label21.TabIndex = 76
+        Label21.Text = "Current address"
+        ' 
+        ' Panel2
+        ' 
+        Panel2.BackColor = Color.MediumAquamarine
+        Panel2.Controls.Add(Label22)
+        Panel2.Location = New Point(0, 1)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(823, 54)
+        Panel2.TabIndex = 77
+        ' 
+        ' Label22
+        ' 
+        Label22.AutoSize = True
+        Label22.Font = New Font("Segoe UI Semibold", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label22.Location = New Point(13, 14)
+        Label22.Name = "Label22"
+        Label22.Size = New Size(143, 25)
+        Label22.TabIndex = 13
+        Label22.Text = "View/Edit Table"
         ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ControlLight
-        ClientSize = New Size(820, 642)
-        Controls.Add(IdTxtBox)
-        Controls.Add(Label6)
-        Controls.Add(DeleteBtn)
-        Controls.Add(UpdateBtn)
-        Controls.Add(Label24)
-        Controls.Add(Label23)
-        Controls.Add(Label20)
-        Controls.Add(PostalCodeTxtBox)
-        Controls.Add(Label18)
+        ClientSize = New Size(820, 715)
+        Controls.Add(Panel2)
+        Controls.Add(Panel1)
         Controls.Add(Label19)
-        Controls.Add(Label17)
         Controls.Add(Label16)
-        Controls.Add(MunicipalityCmbBox)
-        Controls.Add(Label15)
-        Controls.Add(Label14)
-        Controls.Add(Label13)
-        Controls.Add(Label12)
-        Controls.Add(Label11)
-        Controls.Add(Label10)
-        Controls.Add(Label9)
-        Controls.Add(EmailTxtBox)
-        Controls.Add(Label8)
-        Controls.Add(ContactNoTxtBox)
-        Controls.Add(Label7)
-        Controls.Add(SexCmbBox)
-        Controls.Add(Label5)
-        Controls.Add(SuffixCmbBox)
-        Controls.Add(Label1)
-        Controls.Add(DateTimePicker1)
         Controls.Add(Label3)
-        Controls.Add(Label4)
-        Controls.Add(Label2)
-        Controls.Add(FnameLbl)
-        Controls.Add(AddressTxtBox)
-        Controls.Add(SurnameTxtBox)
-        Controls.Add(MiddleNameTxtBox)
-        Controls.Add(FirstNameTxtBox)
         Controls.Add(DataGridView1)
         Name = "Form2"
         Text = "Form2"
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
+        Panel2.ResumeLayout(False)
+        Panel2.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -521,4 +582,9 @@ Partial Class Form2
     Friend WithEvents DeleteBtn As Button
     Friend WithEvents Label6 As Label
     Friend WithEvents IdTxtBox As TextBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Label22 As Label
+    Friend WithEvents Label21 As Label
+    Friend WithEvents TextBox1 As TextBox
 End Class

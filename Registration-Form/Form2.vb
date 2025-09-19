@@ -7,6 +7,27 @@ Public Class Form2
     Dim ConnectionString As String
     Dim CurrentUser As String
 
+    Private Sub LoadMunicipalityDB()
+        Dim conn As New OleDbConnection(ConnectionString)
+        Dim cmd As OleDbCommand
+        Dim reader As OleDbDataReader
+
+        Try
+            conn.Open()
+            Dim sql = "SELECT MunicipalityName FROM Table_municipality ORDER BY MunicipalityName ASC"
+            cmd = New OleDbCommand(sql, conn)
+            reader = cmd.ExecuteReader
+
+            While reader.Read()
+                Dim municipality As String = If(IsDBNull(reader("MunicipalityName")), "NULL", reader("MunicipalityName"))
+                MunicipalityCmbBox.Items.Add(municipality)
+            End While
+
+        Catch ex As Exception
+            MsgBox("Error connecting to database: " & ex.Message)
+        End Try
+    End Sub
+
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles Me.Load
         Dim CurrentPath As String = Directory.GetCurrentDirectory()
         Dim DirInfo As New DirectoryInfo(CurrentPath)
@@ -21,9 +42,16 @@ Public Class Form2
         Next
 
         ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & DirInfo.FullName & "\MSAccess\OOPact.accdb ;Persist Security Info=False;"
+
         LoadRegistrationDB()
+        LoadMunicipalityDB()
+
         DataGridView1.AllowUserToAddRows = False
         DataGridView1.Columns(0).Width = 20
+
+        If String.IsNullOrWhiteSpace(IdTxtBox.Text) Then
+            Panel1.Enabled = False
+        End If
     End Sub
 
     Private Sub UpdateRow(rowIndex As Integer, columnName As String, newValue As String)
@@ -110,10 +138,8 @@ Public Class Form2
         Next
     End Sub
 
-    Private Sub DataGridView1_CellUpdate(sender As Object, e As KeyPressEventArgs) Handles DataGridView1.KeyPress
-        If Asc(e.KeyChar) = 19 Then
-            MsgBox("Save shortcut key")
-        End If
+    Private Sub IDTextbox_TextChange(sender As Object, e As EventArgs) Handles IdTxtBox.TextChanged
+        Panel1.Enabled = True
     End Sub
 
     Private Sub DataGridView1_CellLoseFocus(sender As Object, e As DataGridViewCellValidatingEventArgs) Handles DataGridView1.CellValidating
@@ -133,6 +159,10 @@ Public Class Form2
     End Sub
 
     Private Sub UpdateBtn_Click(sender As Object, e As EventArgs) Handles UpdateBtn.Click
+
+        If ValidateRequiredFields() = False Then
+            Return
+        End If
 
         Dim id = IdTxtBox.Text
         Dim firstName = FirstNameTxtBox.Text
@@ -220,5 +250,107 @@ Public Class Form2
             MsgBox("Error connecting to database: " & ex.Message)
         End Try
 
+    End Sub
+
+    Private Function ValidateRequiredFields() As Boolean
+
+        If String.IsNullOrWhiteSpace(FirstNameTxtBox.Text) Then
+            MessageBox.Show("Name is required.")
+            FirstNameTxtBox.Focus()
+            Return False
+        End If
+
+
+        If String.IsNullOrWhiteSpace(SurnameTxtBox.Text) Then
+            MessageBox.Show("Surname is required.")
+            SurnameTxtBox.Focus()
+            Return False
+        End If
+
+        If Not String.IsNullOrWhiteSpace(ContactNoTxtBox.Text) Then
+            If Not ContactNoTxtBox.Text.Chars(0) = "9" Then
+                MessageBox.Show("Invalid phone number: Must start with 9")
+                ContactNoTxtBox.Focus()
+                Return False
+            ElseIf ContactNoTxtBox.TextLength < 9 Then
+                MessageBox.Show("Phone number less than 10.")
+                ContactNoTxtBox.Focus()
+                Return False
+            End If
+        End If
+
+        If Not String.IsNullOrWhiteSpace(EmailTxtBox.Text) And Not EmailTxtBox.Text = "N/A" Then
+            Dim atSignIndex = EmailTxtBox.Text.IndexOf("@")
+            If (atSignIndex = -1) Then
+                MessageBox.Show("E-Mail Address is invalid.")
+                EmailTxtBox.Focus()
+                Return False
+            End If
+
+            Dim lastPart As String = EmailTxtBox.Text.Substring(atSignIndex)
+            If String.IsNullOrWhiteSpace(lastPart) And Not lastPart.Contains(".") Then
+                MessageBox.Show("E-Mail Address is invalid.")
+                EmailTxtBox.Focus()
+                Return False
+            End If
+        End If
+
+        If String.IsNullOrWhiteSpace(AddressTxtBox.Text) Then
+            MessageBox.Show("Home Address is required.")
+            AddressTxtBox.Focus()
+            Return False
+        End If
+
+        If (SexCmbBox.SelectedIndex = -1) Or (String.IsNullOrWhiteSpace(SexCmbBox.Text)) Then
+            MessageBox.Show("Sex is required.")
+            SexCmbBox.Focus()
+            Return False
+        End If
+
+        'If Not ConfirmationChckBox.Checked Then
+        'MsgBox("Please confirm that all information above is correct.")
+        'ConfirmationChckBox.Focus()
+        'Return False
+        'End If
+
+        If String.IsNullOrWhiteSpace(MunicipalityCmbBox.Text) Then
+            MessageBox.Show("Municipality is required.")
+            MunicipalityCmbBox.Focus()
+            Return False
+        End If
+
+        Return True
+    End Function
+
+    Private Sub SexOrientation_Limit(sender As Object, e As KeyPressEventArgs) Handles SexCmbBox.KeyPress
+        e.Handled = True
+    End Sub
+
+    Private Sub Textbox_Limit(sender As Object, e As EventArgs) Handles FirstNameTxtBox.TextChanged, SurnameTxtBox.TextChanged, MiddleNameTxtBox.TextChanged
+        Dim caller As TextBox = DirectCast(sender, TextBox)
+        If caller.TextLength > 255 Then
+            MsgBox("Limit reached")
+            caller.Text = caller.Text.Remove(caller.TextLength - 1)
+            caller.Select(caller.TextLength, 1)
+        End If
+    End Sub
+
+    Private Sub LetterOnly_KeyPress(sender As Object, e As KeyPressEventArgs) Handles FirstNameTxtBox.KeyPress, SurnameTxtBox.KeyPress, MiddleNameTxtBox.KeyPress
+        If Char.IsDigit(e.KeyChar) And Not Asc(e.KeyChar) = 8 Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub NumberOnly_KeyPress(sender As Object, e As KeyPressEventArgs) Handles ContactNoTxtBox.KeyPress, PostalCodeTxtBox.KeyPress
+        If Not Char.IsDigit(e.KeyChar) And Not Asc(e.KeyChar) = 8 Then
+            e.Handled = True
+        End If
+    End Sub
+
+    Private Sub ContactNoLimit(sender As Object, e As EventArgs) Handles ContactNoTxtBox.TextChanged
+        If ContactNoTxtBox.TextLength >= 10 Then
+            ContactNoTxtBox.Text = ContactNoTxtBox.Text.Remove(ContactNoTxtBox.TextLength - 1)
+            ContactNoTxtBox.Select(ContactNoTxtBox.TextLength, 1)
+        End If
     End Sub
 End Class
