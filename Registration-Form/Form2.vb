@@ -22,6 +22,8 @@ Public Class Form2
 
         ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & DirInfo.FullName & "\MSAccess\OOPact.accdb ;Persist Security Info=False;"
         LoadRegistrationDB()
+        DataGridView1.AllowUserToAddRows = False
+        DataGridView1.Columns(0).Width = 20
     End Sub
 
     Private Sub UpdateRow(rowIndex As Integer, columnName As String, newValue As String)
@@ -80,7 +82,9 @@ Public Class Form2
         Dim row As DataGridViewRow = DataGridView1.Rows(e.RowIndex)
 
         For Each cell As DataGridViewCell In row.Cells
-            If cell.ColumnIndex = 1 Then   'surname
+            If cell.ColumnIndex = 0 Then
+                IdTxtBox.Text = cell.Value.ToString
+            ElseIf cell.ColumnIndex = 1 Then   'surname
                 SurnameTxtBox.Text = cell.Value.ToString
             ElseIf cell.ColumnIndex = 2 Then   'first name
                 FirstNameTxtBox.Text = cell.Value.ToString
@@ -130,6 +134,7 @@ Public Class Form2
 
     Private Sub UpdateBtn_Click(sender As Object, e As EventArgs) Handles UpdateBtn.Click
 
+        Dim id = IdTxtBox.Text
         Dim firstName = FirstNameTxtBox.Text
         Dim middleName = If((MiddleNameTxtBox.Text = ""), "N/A", MiddleNameTxtBox.Text)
         Dim surName = SurnameTxtBox.Text
@@ -146,20 +151,34 @@ Public Class Form2
         Dim municipality = MunicipalityCmbBox.Text
         Dim postalCode = If((PostalCodeTxtBox.Text = ""), "N/A", PostalCodeTxtBox.Text)
 
-        Dim sql As String = "UPDATE Registration SET LastName = @lname, FirstName = @fname, MiddleName = @mname, Suffix = @suffix, Sex = @sex, ContactNo = @contactno, EmailAddress = @emailaddr, BirthDate = @dbirth,  WHERE ID = @id"
+        Dim sql As String = "UPDATE Registration SET LastName = @lname, FirstName = @fname, MiddleName = @mname, Suffix = @suffix, Sex = @sex, ContactNo = @contactno, EmailAddress = @emailaddr, BirthDate = @dbirth, AddressIn = @addr, Municipality = @muni, PostalCode = @pcode WHERE ID = @id"
         Dim dbConnection As New OleDbConnection
         dbConnection = New OleDbConnection(ConnectionString)
         Dim cmd As OleDbCommand
 
+        'MsgBox(sql)
+
         Try
             dbConnection.Open()
             cmd = New OleDbCommand(sql, dbConnection)
-            cmd.Parameters.AddWithValue("@newVal", newValue)
-            cmd.Parameters.AddWithValue("@id", rowIndex)
+            cmd.Parameters.AddWithValue("@lname", surName)
+            cmd.Parameters.AddWithValue("@fname", firstName)
+            cmd.Parameters.AddWithValue("@mname", middleName)
+            cmd.Parameters.AddWithValue("@suffix", suffix)
+            cmd.Parameters.AddWithValue("@sex", sex)
+            cmd.Parameters.AddWithValue("@contactno", contactNo)
+            cmd.Parameters.AddWithValue("@emailaddr", emailAddr)
+            cmd.Parameters.AddWithValue("@dbrith", birthDateFix)
+            cmd.Parameters.AddWithValue("@addr", address)
+            cmd.Parameters.AddWithValue("@muni", municipality)
+            cmd.Parameters.AddWithValue("@pcode", postalCode)
+            cmd.Parameters.AddWithValue("@id", id)
+
             Dim res = cmd.ExecuteNonQuery()
 
             If res > 0 Then
                 MsgBox("Successfully saved update")
+                LoadRegistrationDB()
             Else
                 MsgBox("Error on update")
             End If
@@ -168,5 +187,38 @@ Public Class Form2
         End Try
 
         'AddRecord(surName, firstName, middleName, suffix, sex, contactNo, emailAddr, birthDateFix, address, municipality, postalCode)
+    End Sub
+
+    Private Sub DeleteBtn_Click(sender As Object, e As EventArgs) Handles DeleteBtn.Click
+        If IdTxtBox.Text = "" Then
+            Return
+        End If
+
+        Dim sql As String = "DELETE FROM Registration WHERE ID = @id"
+        Dim dbConnection As New OleDbConnection
+        dbConnection = New OleDbConnection(ConnectionString)
+        Dim cmd As OleDbCommand
+
+        Try
+            dbConnection.Open()
+            cmd = New OleDbCommand(sql, dbConnection)
+            cmd.Parameters.AddWithValue("@id", IdTxtBox.Text)
+            Dim opt = MsgBox("Are you sure? ", vbYesNoCancel)
+
+            If opt = vbYes Then
+                Dim res = cmd.ExecuteNonQuery()
+                If (res > 0) Then
+                    MsgBox("Succesfully deleted")
+                    LoadRegistrationDB()
+                Else
+                    MsgBox("Error on updating")
+                End If
+            Else
+                MsgBox("Operation cancelled")
+            End If
+        Catch ex As Exception
+            MsgBox("Error connecting to database: " & ex.Message)
+        End Try
+
     End Sub
 End Class
