@@ -218,7 +218,7 @@ Public Class RegistrationForm
     End Function
 
     Private Sub ViewRecordBtn_Click(sender As Object, e As EventArgs) Handles ViewRecordBtn.Click
-        Form2.Show(Me)
+        Form2.Show()
     End Sub
 
     Private Sub SexCmbBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles SexCmbBox.KeyPress

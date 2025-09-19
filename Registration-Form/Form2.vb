@@ -250,6 +250,10 @@ Public Class Form2
             MsgBox("Error connecting to database: " & ex.Message)
         End Try
 
+        'FirstNameTxtBox.Clear()
+        'MiddleNameTxtBox.Clear()
+        Panel1.Enabled = False
+
     End Sub
 
     Private Function ValidateRequiredFields() As Boolean

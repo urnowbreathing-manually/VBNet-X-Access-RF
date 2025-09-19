@@ -519,6 +519,7 @@ Partial Class RegistrationForm
         Controls.Add(SurnameTxtBox)
         Controls.Add(MiddleNameTxtBox)
         Controls.Add(FirstNameTxtBox)
+        MaximizeBox = False
         Name = "RegistrationForm"
         Text = "Registration Form"
         Panel1.ResumeLayout(False)

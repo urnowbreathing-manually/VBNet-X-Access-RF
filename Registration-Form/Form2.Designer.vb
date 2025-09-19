@@ -72,10 +72,12 @@ Partial Class Form2
         ' 
         ' DataGridView1
         ' 
+        DataGridView1.AllowUserToResizeColumns = False
         DataGridView1.AllowUserToResizeRows = False
         DataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         DataGridView1.Location = New Point(24, 370)
         DataGridView1.Name = "DataGridView1"
+        DataGridView1.ReadOnly = True
         DataGridView1.Size = New Size(776, 328)
         DataGridView1.TabIndex = 2
         ' 
@@ -534,6 +536,7 @@ Partial Class Form2
         Controls.Add(Label16)
         Controls.Add(Label3)
         Controls.Add(DataGridView1)
+        MaximizeBox = False
         Name = "Form2"
         Text = "Form2"
         CType(DataGridView1, ComponentModel.ISupportInitialize).EndInit()
