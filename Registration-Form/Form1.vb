@@ -94,8 +94,10 @@ Public Class RegistrationForm
         End If
     End Sub
 
+
+
     Private Sub ContactNoLimit(sender As Object, e As EventArgs) Handles ContactNoTxtBox.TextChanged
-        If ContactNoTxtBox.TextLength >= 12 Then
+        If ContactNoTxtBox.TextLength >= 11 Then
             ContactNoTxtBox.Text = ContactNoTxtBox.Text.Remove(ContactNoTxtBox.TextLength - 1)
             ContactNoTxtBox.Select(ContactNoTxtBox.TextLength, 1)
         End If
@@ -158,11 +160,15 @@ Public Class RegistrationForm
             Return False
         End If
 
-        If (ContactNoTxtBox.TextLength < 11) Then
+
+        If ContactNoTxtBox.Text.Chars(0) <> "9" Then
+            MessageBox.Show("First digit must be a '9'.")
+            Return False
+        ElseIf (ContactNoTxtBox.TextLength < 10) Then
             If String.IsNullOrWhiteSpace(ContactNoTxtBox.Text) Then
                 MessageBox.Show("Contact No. is required.")
             Else
-                MessageBox.Show("Contact No. is less than 11 digits.")
+                MessageBox.Show("Contact No. is less than 10 digits.")
             End If
             ContactNoTxtBox.Focus()
             Return False
@@ -190,7 +196,7 @@ Public Class RegistrationForm
             Return False
         End If
 
-        If (SexCmbBox.SelectedIndex = -1) Or (String.IsNullOrWhiteSpace(SexCmbBox.Text)) Then
+        If (String.IsNullOrWhiteSpace(SexCmbBox.Text)) Then
             MessageBox.Show("Sex is required.")
             SexCmbBox.Focus()
             Return False
@@ -202,7 +208,7 @@ Public Class RegistrationForm
             Return False
         End If
 
-        If (MunicipalityCmbBox.SelectedIndex = -1) Or (String.IsNullOrWhiteSpace(MunicipalityCmbBox.Text)) Then
+        If (String.IsNullOrWhiteSpace(MunicipalityCmbBox.Text)) Then
             MessageBox.Show("Municipality is required.")
             MunicipalityCmbBox.Focus()
             Return False
@@ -215,10 +221,17 @@ Public Class RegistrationForm
         Form2.Show(Me)
     End Sub
 
-    'Doesn't handle anything?
-    'Private Sub TextBox_KeyPress(sender As Object, e As KeyPressEventArgs)
-    '    If Char.IsDigit(e.KeyChar) = "1" Then
-    '        e.Handled = True
-    '    End If
-    'End Sub
+    Private Sub SexCmbBox_KeyPress(sender As Object, e As KeyPressEventArgs) Handles SexCmbBox.KeyPress
+        e.Handled = True
+    End Sub
+
+    Private Sub TextBox_Limit(sender As Object, e As EventArgs) Handles FirstNameTxtBox.TextChanged, MiddleNameTxtBox.TextChanged, SurnameTxtBox.TextChanged, EmailTxtBox.TextChanged
+        Dim caller As TextBox = DirectCast(sender, TextBox)
+        If caller.TextLength > 255 Then
+            MsgBox("Limit reached.")
+            caller.Text = caller.Text.Remove(caller.TextLength - 1)
+            caller.Select(caller.TextLength, 1)
+        End If
+    End Sub
+
 End Class

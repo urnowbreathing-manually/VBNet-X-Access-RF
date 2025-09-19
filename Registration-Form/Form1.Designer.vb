@@ -56,12 +56,13 @@ Partial Class RegistrationForm
         PostalCodeTxtBox = New TextBox()
         Label20 = New Label()
         Panel1 = New Panel()
+        ViewRecordBtn = New Button()
         Label22 = New Label()
         ConfirmationChckBox = New CheckBox()
         Label21 = New Label()
         Label23 = New Label()
         Label24 = New Label()
-        ViewRecordBtn = New Button()
+        TextBox1 = New TextBox()
         Panel1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -217,10 +218,10 @@ Partial Class RegistrationForm
         ' 
         ' ContactNoTxtBox
         ' 
-        ContactNoTxtBox.Location = New Point(462, 84)
+        ContactNoTxtBox.Location = New Point(490, 84)
         ContactNoTxtBox.Margin = New Padding(3, 2, 3, 2)
         ContactNoTxtBox.Name = "ContactNoTxtBox"
-        ContactNoTxtBox.Size = New Size(219, 23)
+        ContactNoTxtBox.Size = New Size(191, 23)
         ContactNoTxtBox.TabIndex = 6
         ' 
         ' Label9
@@ -394,6 +395,18 @@ Partial Class RegistrationForm
         Panel1.Size = New Size(731, 54)
         Panel1.TabIndex = 34
         ' 
+        ' ViewRecordBtn
+        ' 
+        ViewRecordBtn.BackColor = Color.Orange
+        ViewRecordBtn.FlatAppearance.BorderSize = 0
+        ViewRecordBtn.FlatStyle = FlatStyle.Flat
+        ViewRecordBtn.Location = New Point(592, 12)
+        ViewRecordBtn.Name = "ViewRecordBtn"
+        ViewRecordBtn.Size = New Size(127, 35)
+        ViewRecordBtn.TabIndex = 14
+        ViewRecordBtn.Text = "View records"
+        ViewRecordBtn.UseVisualStyleBackColor = False
+        ' 
         ' Label22
         ' 
         Label22.AutoSize = True
@@ -448,17 +461,18 @@ Partial Class RegistrationForm
         Label24.TabIndex = 38
         Label24.Text = "Street name"
         ' 
-        ' ViewRecordBtn
+        ' TextBox1
         ' 
-        ViewRecordBtn.BackColor = Color.Orange
-        ViewRecordBtn.FlatAppearance.BorderSize = 0
-        ViewRecordBtn.FlatStyle = FlatStyle.Flat
-        ViewRecordBtn.Location = New Point(592, 12)
-        ViewRecordBtn.Name = "ViewRecordBtn"
-        ViewRecordBtn.Size = New Size(127, 35)
-        ViewRecordBtn.TabIndex = 14
-        ViewRecordBtn.Text = "View records"
-        ViewRecordBtn.UseVisualStyleBackColor = False
+        TextBox1.BackColor = SystemColors.Window
+        TextBox1.Enabled = False
+        TextBox1.Location = New Point(461, 84)
+        TextBox1.Margin = New Padding(3, 2, 3, 2)
+        TextBox1.Name = "TextBox1"
+        TextBox1.ReadOnly = True
+        TextBox1.Size = New Size(31, 23)
+        TextBox1.TabIndex = 1000
+        TextBox1.TabStop = False
+        TextBox1.Text = "+63"
         ' 
         ' RegistrationForm
         ' 
@@ -467,6 +481,7 @@ Partial Class RegistrationForm
         AutoScroll = True
         BackColor = SystemColors.ControlLight
         ClientSize = New Size(730, 523)
+        Controls.Add(TextBox1)
         Controls.Add(Label24)
         Controls.Add(Label23)
         Controls.Add(Label21)
@@ -553,5 +568,6 @@ Partial Class RegistrationForm
     Friend WithEvents Label23 As Label
     Friend WithEvents Label24 As Label
     Friend WithEvents ViewRecordBtn As Button
+    Friend WithEvents TextBox1 As TextBox
 
 End Class

@@ -26,12 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -40,7 +36,7 @@
               "RelativeDocumentMoniker": "Registration-Form\\Form1.vb",
               "ToolTip": "C:\\Users\\Winblows 11\\Documents\\OOP\\VBNet-X-Access-RF\\Registration-Form\\Form1.vb*",
               "RelativeToolTip": "Registration-Form\\Form1.vb*",
-              "ViewState": "AgIAAJEAAAAAAAAAAAAwwJsAAABzAAAAAAAAAA==",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAQwGEAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-09-18T18:27:11.039Z",
               "EditorCaption": ""
@@ -55,8 +51,7 @@
               "RelativeToolTip": "Registration-Form\\Form2.vb",
               "ViewState": "AgIAADAAAAAAAAAAAAAcwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-09-18T19:51:25.159Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T19:51:25.159Z"
             },
             {
               "$type": "Document",
